@@ -108,10 +108,25 @@ Power supply: 9 V DC, centre-negative, any pedal-style supply. The whole board d
 ```
 .
 ├── README.md
+├── easyEDA/
+│   ├── SCH_midi-thru.json   # EasyEDA schematic source
+│   └── PCB_midi-thru.json   # EasyEDA PCB source
+├── gerber/
+│   └── Midi_thru.zip        # Ready-to-order Gerber package
 └── references/
-    ├── schematic.svg    # EasyEDA schematic, rev 1.0
-    └── PCB.png          # Board layout
+    ├── schematic.svg        # Schematic export, rev 1.0
+    ├── PCB.png              # Board layout preview
+    ├── qr-github.svg        # QR code to this repo (used on the PCB silkscreen)
+    └── qr-github.png
 ```
+
+### Order boards
+
+Upload `gerber/Midi_thru.zip` to any PCB fab (JLCPCB, PCBWay, Aisler, OSH Park). Default 1.6 mm FR4, 2 layers, HASL is fine.
+
+### Edit the design
+
+Import `easyEDA/SCH_midi-thru.json` and `easyEDA/PCB_midi-thru.json` into [EasyEDA](https://easyeda.com/) via `File → Open → EasyEDA Source`.
 
 ---
 
@@ -123,4 +138,13 @@ Power supply: 9 V DC, centre-negative, any pedal-style supply. The whole board d
 
 ## License
 
-Hardware design files in this repository are shared for personal and educational use. Please respect Morocco Dave's original work when reusing or redistributing the circuit.
+[![CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+The PCB layout and files in this repository are released under
+[Creative Commons Attribution-ShareAlike 4.0 International](LICENSE) (CC BY-SA 4.0).
+
+You may copy, modify, build and sell boards from these files, as long as you
+**credit Morocco Dave for the circuit and this repository for the layout**, and
+share any derivative under the same license.
+
+The underlying circuit is Morocco Dave's work. If you reuse it elsewhere, credit him.
