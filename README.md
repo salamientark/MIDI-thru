@@ -6,7 +6,7 @@
 
 *PCB layout by me — circuit by [Morocco Dave](https://moroccodave.com/).*
 
-![Schematic](references/schematics.png)
+![Schematic](references/schematic.svg)
 
 </div>
 
@@ -109,7 +109,7 @@ Power supply: 9 V DC, centre-negative, any pedal-style supply. The whole board d
 .
 ├── README.md
 └── references/
-    ├── schematics.png   # EasyEDA schematic, rev 1.0
+    ├── schematic.svg    # EasyEDA schematic, rev 1.0
     └── PCB.png          # Board layout
 ```
 
